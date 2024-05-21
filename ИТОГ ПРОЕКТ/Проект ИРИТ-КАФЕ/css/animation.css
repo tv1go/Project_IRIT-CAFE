@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Анимация для кнопок */
+.button {
+    transition: background-color 0.5s ease;
+}
+
+.button:hover {
+    background-color: #521861; /* Изменение цвета при наведении */
+}
+
+/* Анимация для появления карточек */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: slideInFromLeft 0.5s ease-in-out forwards; 
+}
+
+/* Анимация для появления модального окна */
+.modal {
+    animation: fadeIn 0.5s ease-in-out forwards; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
