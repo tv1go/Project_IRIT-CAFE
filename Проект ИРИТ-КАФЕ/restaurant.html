@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ИРИТ-КАФЕ - доставка еды на дом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <!-- Основной контейнер для всей страницы -->
+    <div class="container">
+        <!-- Заголовок страницы с логотипом и кнопкой корзины -->
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="logo" class="logo-img">
+            </a>
+            <div class="buttons">
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Поиск блюд..." class="search-bar">
+                </div>
+                <div class="cart-wrapper">
+                    <button class="button" id="cart-button">Корзина</button>
+                    <span id="cart-counter" class="cart-counter"></span>
+                </div>        
+            </div>
+        </header>
+    </div>
+
+    <!-- Основная часть страницы с карточками блюд -->
+    <main class="main">
+        <div class="container">
+            <section class="restaurants">
+                <h2 class="section-title">ИРИТ-КАФЕ</h2>
+                <div class="cards">
+                    <!-- Карточка блюда -->
+                    <div class="card">
+                        <img src="img/ugor.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Ролл угорь стандарт</h3>
+                            <div class="ingredients">Рис, угорь, соус унаги, кунжут, водоросли нори</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">300 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/california.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Калифорния стандарт</h3>
+                            <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, нори.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">290 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/fila.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Суши сет "Филадельфия"</h3>
+                            <div class="ingredients">Лосось, авокадо, сливочный сыр, огурец, нори, рис, имбирь, васаби, соевый соус.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">950 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/tempura.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Темпура ролл</h3>
+                            <div class="ingredients">Креветка тигровая, рис, огурец, нори, соус терияки, кунжут, васаби, соевый соус.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">420 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/ogurec.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Ролл с огурцом</h3>
+                            <div class="ingredients">Все просто и вкусно. Хрустящий огурчик, водоросли нори и рис.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">150 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/gunkan.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Гункан с лососем</h3>
+                            <div class="ingredients">Лосось и соус яки. Ничего лишнего.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">350 ₽</strong>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card">
+                        <img src="img/gunkanchuka.jpeg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Гункан с чукой</h3>
+                            <div class="ingredients">Легкий гункан с начинкой из салата чука под ореховым соусом.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">200 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/tunec.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Филадельфия с тунцом</h3>
+                            <div class="ingredients">Филадельфия с тунцом с обновленной рецептурой: нежный вкус сливочного сыра, филе тунца и авокадо. Сверху ролл украшен цитрусовым соусом понзу.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">515 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/futomaki.jpg" class="card-img">
+                        <div class="card-text">
+                            <h3 class="card-title">Футомаки с тунцом</h3>
+                            <div class="ingredients">В этом блюде жареный тунец, огурцы, красная капуста и соус спайси.</div>
+                            <div class="card-buttons">
+                                <button class="button button-primary add-to-cart">В корзину</button>
+                                <strong class="card-price-bold">475 ₽</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Модальное окно для корзины -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times;</button>
+            </div>
+            <div class="modal-body" id="cart-items">
+                 <!-- Список товаров в корзине -->
+            </div>
+            <div class="modal-footer">
+                <span class="modal-pricetag">Общая сумма: <span id="total-price">0 ₽</span></span>
+                <div class="footer-buttons">
+                    <a href="checkout.html" class="button button-primary">Оформить заказ</a>
+                    <button id="cancel-button" class="button button-primary">Очистить корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

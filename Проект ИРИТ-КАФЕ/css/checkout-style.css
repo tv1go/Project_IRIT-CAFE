@@ -1,0 +1,94 @@
+/* Основные стили */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+
+.order-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Стили для текстовых полей ввода и полей ввода телефонных номеров */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #1890ff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #147ed1;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 0 20px; /* Увеличиваем отступы по бокам контейнера */
+    }
+
+    .form-group {
+        margin-bottom: 20px; /* Увеличиваем расстояние между элементами */
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        width: calc(100% - 20px); /* Занимаем всю доступную ширину с учетом отступов */
+        padding: 10px; /* Увеличиваем отступы внутри полей ввода */
+        box-sizing: border-box; /* Учитываем padding в общей ширине элемента */
+    }
+
+    button {
+        width: 100%; /* Занимаем всю доступную ширину */
+    }
+}
